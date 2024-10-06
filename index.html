@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PET WEBSITE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header id="myHeader">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.webp" alt="" />
+    </a>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="#shop_category">Cửa Hàng</a></li>
+        <li><a href="#feature_product">Sản Phẩm Nổi Bật</a></li>
+        <li><a href="#lastest_products">Sản Phẩm Mới Nhất</a></li>
+        <li><a href="#footer">Liên Hệ</a></li>
+      </ul>
+    </div>
+    <ul>
+      <i class="fa-solid fa-user"></i>
+      <!-- Thay button Đăng Nhập thành thẻ <a> -->
+      <a href="login.html" class="button" id="form-open">Đăng Nhập</a>
+    </ul>
+    <div class="header_right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <div class="rel">
+        <a href="#">
+          <i class="fa-regular fa-heart"></i>
+          <span class="num">3</span></a>
+      </div>
+      <!-- Bọc biểu tượng giỏ hàng trong thẻ <a> -->
+      <div class="rel">
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="num">3</span>
+          <span class="total">999.999</span>
+        </a>
+      </div>
+    </div>
+  </header>
+</body>
+
+</html>
+<div class="banner">
+  <div class="banner_txt">
+    <p>PET-SHOP GIẢM GIÁ 30%</p>
+    <h1>Chúng tôi quan tâm đến thú cưng của bạn!</h1>
+  </div>
+</div>
+<section id="shop_category" class="w-70">
+  <div class="shop_category">
+    <div class="heading">
+      <h3>Danh Mục Sản Phẩm</h3>
+      <div class="paw">
+        <i class="fa-solid fa-paw"></i>
+      </div>
+    </div>
+    <div class="food">
+      <div class="food_items">
+        <div class="img">
+          <a href="detail.html?product=dog_food"><img src="Img/dogs_food.webp" alt="Thức Ăn Cho Chó" /></a>
+        </div>
+        <div class="food_details">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thức Ăn Cho Chó</h4>
+          <h3>25.000</h3>
+          <p>Mô Tả Sản Phẩm</p>
+          <button class="a">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+
+      <div class="food_items">
+        <div class="img">
+          <a href="detail.html?product=cat_food"><img src="Img/cats_food.webp" alt="Thức Ăn Cho Mèo" /></a>
+        </div>
+        <div class="food_details">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thức Ăn Cho Mèo</h4>
+          <h3>28.000</h3>
+          <p>Mô Tả Sản Phẩm</p>
+          <button class="a">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+      <div class="food_items">
+        <div class="img">
+          <a href="detail.html?product=bird_food"><img src="Img/a..webp" alt="Thức Ăn Cho Chim" /></a>
+        </div>
+        <div class="food_details">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thức Ăn Cho Chim</h4>
+          <h3>29.000</h3>
+          <p>Mô Tả Sản Phẩm</p>
+          <button class="a">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="shop_category" class="w-70">
+  <div class="shop_category">
+    <div class="heading">
+      <!-- <h3>Shop By Category</h3> -->
+      <div class="paw">
+        <i class="fa-solid fa-paw"></i>
+      </div>
+    </div>
+    <div class="pet_list">
+      <div class="single_pet">
+        <div class="img">
+          <img src="Img/dog.webp" alt="" />
+        </div>
+        <h4>Thức Ăn Cho Chó</h4>
+      </div>
+      <div class="single_pet">
+        <div class="img">
+          <img src="Img/cat.webp" alt="" />
+        </div>
+        <h4>Thức Ăn Cho Mèo</h4>
+      </div>
+      <div class="single_pet">
+        <div class="img">
+          <img src="Img/bird.webp" alt="" />
+        </div>
+        <h4>Thức Ăn Cho Chim</h4>
+      </div>
+      <div class="single_pet">
+        <div class="img">
+          <img src="Img/rabit.webp" alt="" />
+        </div>
+        <h4>Thức Ăn Cho Thỏ</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="second_banner">
+  <div class="txt">
+    <h5>"Giảm giá 30% Sản phẩm Hữu cơ"</h5>
+    <h2>
+      Thức ăn ngon &
+      lành mạnh! <br />
+    </h2>
+    <button>Mua Ngay</button>
+  </div>
+</div>
+
+<section id="feature_product" class="w-70">
+  <div class="feature_pro">
+    <div class="heading">
+      <h3>Sản Phẩm Nổi Bật</h3>
+      <div class="paw">
+        <i class="fa-solid fa-paw"></i>
+      </div>
+    </div>
+    <div class="feature_product">
+      <div class="fp_items">
+        <div class="img">
+          <img src="Img/feature_product-1.webp" alt="" />
+          <div class="tag">-10% Sale</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="fp_details">
+          <div class="reviews">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="sub_category">Foxic</span>
+          <h6>Thức Ăn Cho Chó Nhỏ</h6>
+          <div class="price">
+            <del>200.000</del>
+            <span>180.000</span>
+          </div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="fp_items">
+        <div class="img">
+          <img src="Img/feature_product-2.webp" alt="" />
+          <div class="tag">-10% Sale</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="fp_details">
+          <div class="reviews">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="sub_category">Foxic</span>
+          <h6>Lồng Chim</h6>
+          <div class="price">
+            <del>300.000</del>
+            <span>270.000</span>
+          </div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="fp_items">
+        <div class="img">
+          <img src="Img/feature_product-3.webp" alt="" />
+          <div class="tag">-10% Sale</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="fp_details">
+          <div class="reviews">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="sub_category">Foxic</span>
+          <h6>Gói 12 Lon Thức Ăn Cho Mèo</h6>
+          <div class="price">
+            <del>250.000</del>
+            <span>225.000</span>
+          </div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="fp_items">
+        <div class="img">
+          <img src="Img/feature_product-4.webp" alt="" />
+          <div class="tag">-10% Sale</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="fp_details">
+          <div class="reviews">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="sub_category">Foxic</span>
+          <h6>Trung Tâm Chơi Cho Mèo</h6>
+          <div class="price">
+            <del>400.000/del>
+              <span>360.000</span>
+          </div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="w-70">
+  <div class="two_banner">
+    <div class="img">
+      <img src="Img/left_banner.webp" alt="" />
+      <div class="txt">
+        <h5>Chỉ Trong Ngày Hôm Nay</h5>
+        <h4>
+          Khuyến Mãi Lớn <br />
+          Lên Đến 50%
+        </h4>
+      </div>
+    </div>
+    <div class="img">
+      <img src="Img/right_banner.webp" alt="" />
+      <div class="txt">
+        <h5>Ưu Đãi Đặc Biệt</h5>
+        <h4>
+          Nhận thêm <br />
+          10% Giảm Giá
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lastest_products" class="w-70">
+  <div class="lastest_pro">
+    <div class="heading">
+      <h3>Sản Phẩm Mới Nhất</h3>
+      <div class="paw">
+        <i class="fa-solid fa-paw"></i>
+      </div>
+    </div>
+    <div class="lastest_product">
+      <div class="lp_items">
+        <div class="img">
+          <img src="Img/latest_product-1.webp" alt="" />
+          <!-- <div class="tag"></div> -->
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="lp_deatails">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Lồng Chim Trắng/Đen</h4>
+          <div class="price"> <span>270.000</span></div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="lp_items">
+        <div class="img">
+          <img src="Img/latest_product-2.webp" alt="" />
+          <div class="tag">-20%</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="lp_deatails">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thực Phẩm Cho Chim</h4>
+          <div class="price"><del>200.000</del> <span>180.000</span></div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="lp_items">
+        <div class="img">
+          <img src="Img/latest_product-3.webp" alt="" />
+          <div class="tag">-10%</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="lp_deatails">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thực Phẩm Cho Mèo</h4>
+          <div class="price"><del>250.000</del> <span>225.000</span></div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="lp_items">
+        <div class="img">
+          <img src="Img/latest_product-4.webp" alt="" />
+          <!-- <div class="tag">-50%</div> -->
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="lp_deatails">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thực Phẩm Cho Chim</h4>
+          <div class="price"> <span>135.000</span></div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="lp_items">
+        <div class="img">
+          <img src="Img/latest_product-5.webp" alt="" />
+          <div class="tag">-5%</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="lp_deatails">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Nệm Cho Thú Cưng</h4>
+          <div class="price"><del>100.000</del> <span>95.000</span></div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+      <div class="lp_items">
+        <div class="img">
+          <img src="Img/latest_product-6.webp" alt="" />
+          <div class="tag">-7%</div>
+          <div class="hidden_icons">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-eye"></i>
+          </div>
+        </div>
+        <div class="lp_deatails">
+          <div class="review">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <h4>Thức Ăn Cho Chó</h4>
+          <div class="price"><del>100.000</del> <span>93.000</span></div>
+          <button>Thêm Vào Giỏ Hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="bf_banner">
+  <div class="bf_food">
+    <img src="Img/big_banner_food.webp" alt="" />
+  </div>
+  <div class="left_txt">
+    <div>
+      <h4>Thức Ăn Thật</h4>
+      <p>Thịt và rau củ cấp độ con người trong các công thức đơn giản, được làm cho chó</p>
+    </div>
+    <div>
+      <h4>An Toàn</h4>
+      <p>An toàn và chất lượng chưa từng có trước đây cho thú cưng</p>
+    </div>
+  </div>
+  <div class="right_txt">
+    <div>
+      <h4>Sản Xuất Tươi Mới</h4>
+      <p>Giữ Nguyên Thực Phẩm và Dinh Dưỡng</p>
+    </div>
+    <div>
+      <h4>Được Chấp Thuận Bởi Bác Sĩ Thú Y</h4>
+      <p>Dinh dưỡng vượt qua các tiêu chuẩn ngành công nghiệp cho thú cưng</p>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer id="footer">
+  <hr>
+  <div class="footer-section1">
+    <div class="section1-block1">
+      <img src="Img/email.svg" alt="Email">
+      <p>Đăng ký nhận tin</p>
+    </div>
+    <div class="section1-block2">
+      <input type="email" name="email" id="email" placeholder="Nhập email của bạn:">
+      <span>Đăng ký</span>
+    </div>
+    <div class="section1-block3">
+      <img src="Img/phone.svg" alt="Phone">
+      <p>Hotline: 123456789</p>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-section2">
+    <div class="introduce">
+      <h2>GIỚI THIỆU</h2>
+      <p>
+        FOXIC petshop là cửa hàng chuyên cung cấp thức ăn và phụ kiện cho thú
+        cưng tọa lạc tại TP. Đà Nẵng. Đến với FOXIT, khách yêu shopping tận
+        lực, FOXIT tư vấn tận tâm.
+      </p>
+      <img src="Img/xac-nhan-bct.png" alt="Xác nhận bộ công thương">
+    </div>
+    <div class="policy">
+      <h2>CHÍNH SÁCH</h2>
+      <ul>
+        <li><a href="#">Liên hệ</a></li>
+        <li><a href="#">Hình thức thanh toán</a></li>
+        <li><a href="#">Điều khoản dịch vụ</a></li>
+        <li><a href="#">Chính sách vận chuyển</a></li>
+        <li><a href="#">Chính sách đổi trả</a></li>
+        <li><a href="#">Chính sách bảo mật thông tin</a></li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h2>THÔNG TIN LIÊN HỆ</h2>
+      <div class="cover-contact">
+        <img src="Img/address.svg" alt="Địa chỉ">
+        <p>123 Quang Trung, Thạch Thang, Hải Châu, Đà Nẵng</p>
+      </div>
+      <div class="cover-contact">
+        <img src="Img/phone.svg" alt="SĐT">
+        <p>123456789</p>
+      </div>
+      <div class="cover-contact">
+        <img src="Img/email.svg" alt="Email">
+        <p>foxicshop2024@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End footer -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  window.onscroll = function () {
+    myFunction();
+  };
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Đặt các thuộc tính mặc định cho tất cả các phần tử */
+* {
+    margin: 0; /* Không có khoảng cách bên ngoài */
+    padding: 0; /* Không có khoảng cách bên trong */
+    box-sizing: border-box; /* Để tính toán chiều rộng và chiều cao bao gồm padding và border */
+    font-family: 'Poppins', sans-serif; /* Thiết lập font chữ */
+}
+
+/* Đặt kiểu cho body */
+body {
+    height: 100vh; /* Chiều cao 100% của viewport */
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-left: 75px;
+    background-color: rgb(238, 238, 44); /* Màu nền sáng hơn */
+    background-image: url("Img/backgroundlogin.png");
+    background-size: cover;
+}
+
+/* Khung chứa form */
+.khung {
+   
+    position: relative; /* Để vị trí tương đối cho các phần tử con */
+    width: 450px; /* Chiều rộng tối đa của khung */
+    background: #eef09a; /* Màu nền trắng */
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 2);
+    border-radius: 10px; /* Bo tròn góc */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Bóng đổ để tạo độ nổi bật */
+    margin: 0 20px; /* Khoảng cách hai bên */
+    padding: 30px 40px;
+    
+}
+
+/* Kiểu cho form */
+.form {
+    padding: 30px; /* Khoảng cách bên trong */
+    background-color: #eef09a; /* Màu nền trắng cho form */
+}
+
+/* Tiêu đề của form */
+.form .tieu-de {
+    position: relative; /* Để vị trí tương đối cho pseudo-element */
+    font-size: 27px; /* Kích thước chữ */
+    font-weight: 600; /* Độ đậm của chữ */
+}
+
+/* Tạo đường dưới tiêu đề */
+.form .tieu-de::before {
+    content: ''; /* Không có nội dung, chỉ tạo một đường */
+    position: absolute; /* Vị trí tuyệt đối */
+    left: 0; /* Đặt bên trái */
+    bottom: 0; /* Đặt ở dưới cùng */
+    height: 3px; /* Chiều cao đường */
+    width: 30px; /* Chiều rộng đường */
+    background-color: #FFD70A; /* Màu đường */
+    border-radius: 25px; /* Bo tròn đường */
+}
+
+/* Trường nhập */
+.truong-nhap {
+    position: relative; /* Vị trí tương đối cho các phần tử con */
+    height: 50px; /* Chiều cao của trường */
+    width: 100%; /* Chiều rộng 100% */
+    margin-top: 30px; /* Khoảng cách trên trường */
+}
+
+/* Đặt kiểu cho input trong trường */
+.truong-nhap input {
+    position: absolute; /* Vị trí tuyệt đối */
+    height: 100%; /* Chiều cao 100% của trường */
+    width: 100%; /* Chiều rộng 100% của trường */
+    padding: 0 35px; /* Khoảng cách bên trong */
+    border: none; /* Không có viền */
+    outline: none; /* Không có viền khi focus */
+    font-size: 16px; /* Kích thước chữ */
+    border-bottom: 2px solid #ccc; /* Viền dưới mờ */
+    border-top: 2px solid transparent; /* Không có viền trên */
+    transition: all 0.2s ease; /* Hiệu ứng chuyển tiếp khi thay đổi trạng thái */
+}
+
+/* Đổi màu viền dưới khi input được focus hoặc có giá trị */
+.truong-nhap input:is(:focus, :valid) {
+    border-bottom-color: #FFD70A; /* Đổi màu viền dưới */
+}
+
+/* Kiểu cho icon trong trường nhập */
+.truong-nhap i {
+    position: absolute; /* Vị trí tuyệt đối */
+    top: 50%; /* Đặt giữa theo chiều dọc */
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    color: #999; /* Màu icon */
+    font-size: 23px; /* Kích thước icon */
+    transition: all 0.2s ease; /* Hiệu ứng chuyển tiếp khi thay đổi trạng thái */
+}
+
+/* Đổi màu icon khi input được focus hoặc có giá trị */
+.truong-nhap input:is(:focus, :valid) ~ i {
+    color: #FFD70A; /* Đổi màu icon */
+}
+
+/* Icon đầu vào */
+.truong-nhap i.icon {
+    left: 0; /* Đặt icon bên trái */
+}
+
+/* Icon hiện/ẩn mật khẩu */
+.truong-nhap i.showHidePw {
+    right: 0; /* Đặt icon bên phải */
+    cursor: pointer; /* Thay đổi con trỏ thành hình tay khi hover */
+    padding: 10px; /* Khoảng cách bên trong */
+}
+
+/* Kiểu cho checkbox và văn bản */
+.checkbox-text {
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: space-between; /* Tạo khoảng cách giữa các phần tử */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+/* Kiểu cho nội dung checkbox */
+.checkbox-text .checkbox-content {
+    display: flex; /* Sử dụng Flexbox để căn giữa nội dung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Kiểu cho checkbox */
+.checkbox-content input {
+    margin-right: 10px; /* Khoảng cách bên phải của checkbox */
+    accent-color: #FFD70A; /* Màu sắc cho checkbox */
+}
+
+/* Kiểu cho văn bản */
+.text {
+    color: #333; /* Màu chữ */
+    font-size: 14px; /* Kích thước chữ */
+}
+
+/* Kiểu cho liên kết */
+a.text {
+    color: #FFD70A; /* Màu liên kết */
+    text-decoration: none; /* Không gạch chân */
+}
+
+/* Hiệu ứng hover cho liên kết */
+a:hover {
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+/* Kiểu cho nút */
+.nut {
+    margin-top: 35px; /* Khoảng cách trên nút */
+}
+
+/* Kiểu cho input trong nút */
+.nut input {
+    border: none; /* Không có viền */
+    color: #fff; /* Màu chữ trắng */
+    font-size: 17px; /* Kích thước chữ */
+    font-weight: 500; /* Độ đậm của chữ */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ cái */
+    border-radius: 10px; /* Bo tròn góc nút */
+    background-color: #FFD70A; /* Màu nền của nút */
+    cursor: pointer; /* Thay đổi con trỏ thành hình tay khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển tiếp khi hover */
+}
+
+/* Hiệu ứng hover cho nút */
+.nut input:hover {
+    background-color: #fff; /* Đổi màu nền khi hover */
+    color: black; /* Đổi màu chữ khi hover */
+    border: 2px solid #FFD70A; /* Thêm viền khi hover */
+}
+
+
+/* Kiểu cho phần đăng nhập và đăng ký */
+.dang-nhap-dang-ky {
+    margin-top: 30px; /* Khoảng cách trên */
+    text-align: center; /* Căn giữa văn bản */
+    
+}
+.dang-nhap-dang-ky a{
+    color: red;
+}

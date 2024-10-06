@@ -1,0 +1,499 @@
+/* Header */
+/* Header */
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+.header .header-top {
+    display: flex;
+}
+
+.header .header-top .header-section-one {
+    display: flex;
+    background-color: var(--color-two);
+    width: 80%;
+    border: 1px solid var(--color-one);
+    border-radius: 45px;
+    margin-right: 20px;
+    justify-content: center;
+    /*Căn giữa theo chiều ngang*/
+    align-items: center;
+    /*Căn giữa theo chiều dọc*/
+}
+
+.header .header-top .header-section-one img {
+    width: 150px;
+    margin-right: 30px;
+}
+
+.header .header-top .header-section-one img:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+.header .header-top .header-section-one input {
+    width: 60%;
+    height: 30px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border: none;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.header .header-top .header-section-one i {
+    background-color: #0988dd;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+}
+
+.header .header-top .header-section-one i:hover {
+    cursor: pointer;
+    background-color: #f8efef;
+}
+
+.header .header-top .header-section-two {
+    background-color: var(--color-one);
+    width: 15%;
+    border: 1px solid var(--color-one);
+    border-radius: 45px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.header .header-top .header-section-two img {
+    width: 38px;
+}
+
+.header .header-top .header-section-two img:hover {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
+}
+
+.header .header-top .header-section-two #quantity-in-cart {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    background-color: transparent;
+}
+
+.menu-bar {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.menu-bar ul {
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+.menu-bar ul li {
+    margin-left: 100px;
+}
+
+/* end header */
+/* End-Header */
+/* Content */
+.inner-wrap {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    /* Đặt giới hạn chiều rộng */
+    margin: 0 auto;
+    /* Căn giữa container */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container .inner-wrap h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.content-form {
+    width: 70%;
+    margin-right: 2%;
+}
+
+.container .inner-wrap p {
+    margin-bottom: 10px;
+}
+
+.container .inner-wrap h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.container .inner-wrap a {
+    color: gray;
+}
+
+.wrapper-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.inner-wrap .wrapper-content .content-form input[type="text"],
+.inner-wrap .wrapper-content .content-form input[type="email"] {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 12px;
+    padding: 20px 20px 20px 20px;
+    color: var(--color-text);
+    border-radius: 5px;
+    border: 0.5px solid #7c7c7c;
+}
+
+.inner-wrap .wrapper-content .content-form input:hover {
+    background-color: var(--color-background2);
+}
+
+.inner-wrap .wrapper-content .content-form .block1-inner-email-phone {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inner-wrap .wrapper-content .content-form .inner-email {
+    margin-right: 2%;
+}
+
+.inner-wrap .wrapper-content .content-form .inner-email,
+.inner-phone {
+    width: 49%;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box,
+.inner-wrap .wrapper-content .block2-wrapper-inner,
+.inner-wrap .wrapper-content .block3-wrapper-inner {
+    color: var(--color-text);
+    border-radius: 5px;
+    border: 0.5px solid #7c7c7c;
+    margin-top: 10px;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 {
+    border-bottom: 0.5px solid #7c7c7c;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 .delivery-1-title-wrapper,
+.inner-wrap .wrapper-content .content-vanchuyen .block2-wrapper-inner .block2-inner,
+.inner-wrap .wrapper-content .content-thanhtoan .block3-wrapper-inner .block3-inner {
+    border-bottom: 0.5px solid #7c7c7c;
+    padding: 10px;
+}
+
+.inner-wrap .wrapper-content .content-thanhtoan .block3-wrapper-inner .block3-inner:nth-child(3) {
+    border-top: none;
+    border-bottom: none;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-2 {
+    border: none;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 .delivery-1-title,
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-2 .delivery-2-title {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 2%;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 .delivery-1-content {
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 .delivery-1-content .delivery-1-content-city {
+    display: flex;
+
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 .delivery-1-content .delivery-1-content-city select {
+    padding: 10px;
+    width: 30%;
+    color: var(--color-text);
+}
+
+.inner-wrap .wrapper-content .content-thongtin .delivery-box .delivery-1 .delivery-1-content .delivery-1-content-city select:nth-child(2) {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section2-confirm {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+.section2-confirm a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.content-2 {
+    width: 30%;
+    max-width: 1200px;
+    align-items: center;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-2 .item img {
+    width: 150px;
+}
+
+.content-2 .item .content {
+    margin-left: 20px;
+}
+
+.content-2 .item .content h2 {
+    font-size: 16.5px;
+    padding: 0;
+    margin: 0;
+}
+
+.content-2 .item .content p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.content-2 .item .content .quantity-box {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.content-2 .item .content .quantity-box i {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.content-2 .item .content .quantity-box i:hover {
+    background-color: #f0efef;
+}
+
+.content-2 .item .content .quantity-box input {
+    font-size: 14.5px;
+    padding: 2px;
+    color: var(--color-text);
+    width: 60px;
+    text-align: center;
+}
+
+.content-1 {
+    width: 70%;
+}
+
+.content-2 {
+    width: 30%;
+    max-width: 1200px;
+    align-items: center;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content-2 .cart-product-list {
+    width: 100%;
+}
+
+.content-2 .item {
+    display: flex;
+    position: relative;
+}
+
+hr {
+    margin-top: 10px;
+}
+
+.content-2 .item .delete-item {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+    padding: 5px;
+}
+
+.content-2 .item .delete-item:hover {
+    background-color: #f0efef;
+}
+
+.content-2 .item hr {
+    display: block;
+}
+
+.section2-confirm button {
+    padding: 10px 30px;
+    background-color: var(--color-one);
+    width: 200px;
+    color: white;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 20px;
+    border-radius: 5px solid #08060600;
+}
+
+.section2-confirm button:hover {
+    background-color: var(--color-background1);
+    color: var(--color-text);
+    border-radius: 20px;
+
+}
+
+/* END-CONTENT */
+/* FOOTER */
+footer {
+    font-family: var(--font1);
+    margin-top: 50px;
+    background-color: #f4f4f4;
+}
+
+footer .footer-section2 h2 {
+    font-weight: bold;
+}
+
+footer ul li a {
+    font-family: var(--font1);
+}
+
+.footer-section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-section1 .section1-block1,
+.section1-block2,
+.section1-block3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section1 .section1-block1 img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.footer-section1 .section1-block2 {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-section1 .section1-block2 input {
+    width: 75%;
+    height: 45px;
+    border: 1px solid #000;
+    border-right: none;
+}
+
+.footer-section1 .section1-block2 span {
+    display: flex;
+    background-color: var(--color-one);
+    height: 45px;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-weight: 800;
+}
+
+.footer-section2 {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-section2 h2 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-section2 p,
+ul li {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-section2 .introduce {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: var(--font1);
+    margin-right: 30px;
+}
+
+.footer-section2 .introduce img {
+    margin-top: 20px;
+    width: 177px;
+}
+
+.footer-section2 .policy {
+    width: 25%;
+    margin-right: 30px;
+}
+
+.footer-section2 .policy ul li {
+    list-style-image: url("../image/hand-point.svg");
+}
+
+.footer-section2 .contact {
+    width: 40%;
+}
+
+.footer-section2 .contact .cover-contact {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.footer-section2 .contact p {
+    margin-left: 10px;
+}
+
+/* end footer */

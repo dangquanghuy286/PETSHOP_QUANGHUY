@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="Style.css" />
+  <title>Product-Detail</title>
+</head>
+
+<body>
+  <header id="myHeader">
+    <a href="index.html" class="logo">
+      <img src="Img/logo.webp" alt="" />
+    </a>
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Trang Chủ</a></li>
+        <li><a href="#shop_category">Cửa Hàng</a></li>
+        <li><a href="#feature_product">Sản Phẩm Nổi Bật</a></li>
+        <li><a href="#lastest_products">Sản Phẩm Mới Nhất</a></li>
+        <li><a href="#footer">Liên Hệ</a></li>
+      </ul>
+    </div>
+    <ul>
+      <i class="fa-solid fa-user"></i>
+      <!-- Thay button Đăng Nhập thành thẻ <a> -->
+      <a href="login.html" class="button" id="form-open">Đăng Nhập</a>
+    </ul>
+    <div class="header_right">
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <div class="rel">
+        <a href="#">
+          <i class="fa-regular fa-heart"></i>
+          <span class="num">3</span></a>
+      </div>
+      <!-- Bọc biểu tượng giỏ hàng trong thẻ <a> -->
+      <div class="rel">
+        <a href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="num">3</span>
+          <span class="total">999.999</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  </div>
+
+  <section class="section product-detail">
+    <div class="details container">
+      <div class="left image-container">
+        <div class="main">
+          <img src="Img/dogs_food.webp" id="zoom" alt="" />
+        </div>
+      </div>
+      <div class="right">
+        <h2>Thức Ăn Cho Chó</h2>
+        <div class="price">25.000</div>
+        <form>
+          <div class="quantity-selector">
+            <label for="quantity">Số lượng:</label>
+            <div class="quantity-controls">
+              <button id="decrease" type="button">-</button>
+              <input type="number" id="quantity" value="1" min="1" />
+              <button id="increase" type="button">+</button>
+            </div>
+          </div>
+        </form>
+        <form class="form">
+          <a href="cart.html" class="addCart">Thêm Vào Giỏ Hàng</a>
+          <a href="pay.html" class="pay">Mua Hàng</a>
+        </form>
+        <h3>CHI TIẾT SẢN PHẨM</h3>
+        <p>
+          Tên sản phẩm: Thức ăn cho chó cao cấp "Pawsitive Pro"
+          <br />
+          Thương hiệu:Pawsitive Pets
+          <br />
+          Loại thức ăn: Hạt khô
+          <br />
+          Độ tuổi phù hợp: Tất cả các loại
+          <br />
+          Kích thước gói: 5kg Hương vị: Gà và cá hồi
+          <br />
+          Thành phần chính: Gà tươi, cá hồi, lúa mạch
+          <br />
+          Chức năng: Hỗ trợ sức khỏe tim mạch, da lông và hệ tiêu hóa
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured">
+    <div class="top container">
+      <h1>Sản Phẩm Tương Tự</h1>
+      <a href="#" class="view-more">Xem thêm</a>
+    </div>
+    <div class="product-center container">
+      <div class="product-item">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="Img/cats_food.webp" alt="" />
+          </a>
+        </div>
+        <div class="product-info">
+          <span>Foxic</span>
+          <a href="">Thức Ăn Cho Mèo</a>
+          <h4>28.000</h4>
+        </div>
+        <ul class="icons">
+          <li><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="Img/feature_product-1.webp" alt="" />
+          </a>
+          <span class="discount">40%</span>
+        </div>
+        <div class="product-info">
+          <span>Foxic</span>
+          <a href="">Thức Ăn Cho Chó Nhỏ</a>
+          <h4>180.000</h4>
+        </div>
+        <ul class="icons">
+          <li><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="Img/feature_product-2.webp" alt="" />
+          </a>
+        </div>
+        <div class="product-info">
+          <span>Foxic</span>
+          <a href="">Lồng Chim</a>
+          <h4>270.000</h4>
+        </div>
+        <ul class="icons">
+          <li><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+      <div class="product-item">
+        <div class="overlay">
+          <a href="" class="product-thumb">
+            <img src="Img/feature_product-3.webp" alt="" />
+          </a>
+          <span class="discount">40%</span>
+        </div>
+        <div class="product-info">
+          <span>Foxic</span>
+          <a href="">Gói 12 Lon Thức Ăn Cho Mèo</a>
+          <h4>225.000</h4>
+        </div>
+        <ul class="icons">
+          <li><i class="bx bx-heart"></i></li>
+          <li><i class="bx bx-search"></i></li>
+          <li><i class="bx bx-cart"></i></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

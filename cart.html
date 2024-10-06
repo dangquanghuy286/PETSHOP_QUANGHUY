@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <title>Giỏ Hàng</title>
+</head>
+
+<body>
+    <header id="myHeader">
+        <a href="index.html" class="logo">
+            <img src="Img/logo.webp" alt="" />
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="index.html#shop_category">Cửa Hàng</a></li>
+                <li><a href="index.html#feature_product">Sản Phẩm Nổi Bật</a></li>
+                <li><a href="index.html#lastest_products">Sản Phẩm Mới Nhất</a></li>
+                <li><a href="#footer">Liên Hệ</a></li>
+            </ul>
+        </div>
+        <ul>
+            <i class="fa-solid fa-user"></i>
+            <!-- Thay button Đăng Nhập thành thẻ <a> -->
+            <a href="login.html" class="button" id="form-open">Đăng Nhập</a>
+        </ul>
+        <div class="header_right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="rel">
+                <i class="fa-regular fa-heart"></i>
+                <span class="num">3</span>
+            </div>
+            <!-- Bọc biểu tượng giỏ hàng trong thẻ <a> -->
+            <div class="rel">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="num">3</span>
+                    <span class="total">999.999</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="cart">
+            <div class="top">
+                <h2>Giỏ hàng</h2>
+                <h2 id="itemA">4 sản phẩm</h2>
+            </div>
+            <table cellspacing="0" class="table-head">
+                <tr>
+                    <th width="150" class="head-img">Hình ảnh</th>
+                    <th width="360">Tên</th>
+                    <th width="150">Giá</th>
+                    <th width="70">Xóa</th>
+                </tr>
+            </table>
+            <table id="root" cellspacing="0"></table>
+            <hr>
+        </div>
+
+        <div class="summary">
+            <div class="top">
+                <h2>Tóm tắt đơn hàng</h2>
+            </div>
+            <div class="detail">
+                <h2 id="itemB">4 sản phẩm</h2>
+                <h2 id="totalA">$ 600.00</h2>
+            </div>
+            <div style="margin-top: 30px; padding: 0 30px;">
+                <h2>Vận chuyển</h2>
+                <input type="text" placeholder="Giao hàng tiêu chuẩn">
+                <h2>Mã giảm giá</h2>
+                <input type="text" placeholder="Nhập mã của bạn" id="promocode">
+                <button class="first-btn" id="promo" onclick="promo()">Áp dụng</button>
+            </div>
+            <hr>
+            <div class="top">
+                <h2>Tổng cộng</h2>
+                <h2 id="totalB">$ 600.00</h2>
+            </div>
+            <div style="padding: 0 10px; margin-bottom: 20px;">
+                <button class="checkout">Thanh toán</button>
+            </div>
+            <div class="thanhtoan">
+                <a href="payment.html">Chưa Có Thông Tin Thanh Toán</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer id="footer">
+        <hr>
+        <div class="footer-section1">
+            <div class="section1-block1">
+                <img src="Img/email.svg" alt="Email">
+                <p>Đăng ký nhận tin</p>
+            </div>
+            <div class="section1-block2">
+                <input type="email" name="email" id="email" placeholder="Nhập email của bạn:">
+                <span>Đăng ký</span>
+            </div>
+            <div class="section1-block3">
+                <img src="Img/phone.svg" alt="Phone">
+                <p>Hotline: 123456789</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-section2">
+            <div class="introduce">
+                <h2>GIỚI THIỆU</h2>
+                <p>
+                    FOXIC petshop là cửa hàng chuyên cung cấp thức ăn và phụ kiện cho thú
+                    cưng tọa lạc tại TP. Đà Nẵng. Đến với FOXIT, khách yêu shopping tận
+                    lực, FOXIT tư vấn tận tâm.
+                </p>
+                <img src="Img/xac-nhan-bct.png" alt="Xác nhận bộ công thương">
+            </div>
+            <div class="policy">
+                <h2>CHÍNH SÁCH</h2>
+                <ul>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Hình thức thanh toán</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                    <li><a href="#">Chính sách vận chuyển</a></li>
+                    <li><a href="#">Chính sách đổi trả</a></li>
+                    <li><a href="#">Chính sách bảo mật thông tin</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>THÔNG TIN LIÊN HỆ</h2>
+                <div class="cover-contact">
+                    <img src="Img/address.svg" alt="Địa chỉ">
+                    <p>123 Quang Trung, Thạch Thang, Hải Châu, Đà Nẵng</p>
+                </div>
+                <div class="cover-contact">
+                    <img src="Img/phone.svg" alt="SĐT">
+                    <p>123456789</p>
+                </div>
+                <div class="cover-contact">
+                    <img src="Img/email.svg" alt="Email">
+                    <p>foxicshop2024@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End- footer -->
+    <script src="cartpage.js"></script>
+</body>
+
+</html>

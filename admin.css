@@ -1,0 +1,323 @@
+/* SIDEBAR */
+.sidebar {
+    width: 300px; 
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--color-one);
+    padding-top: 1rem; 
+}
+
+.sidebar-nhanh {
+    height: 80px; 
+    padding: 1rem 1.5rem; 
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.sidebar-nhanh a {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.sidebar-menu a {
+    display: flex;
+    align-items: center; 
+    color: #000000;
+    font-size: 18px; 
+    font-weight: 500; 
+    transition: color 0.3s ease; 
+    padding-left: 1rem;
+}
+
+.sidebar-menu a.active {
+    background: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: var(--color-one);
+    border-radius: 30px 0 0 30px;
+}
+
+.sidebar-menu a:hover {
+    color: var(--color-text);
+}
+
+.sidebar-menu a i {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+/* END-SIDEBAR */
+
+/* MAIN */
+.main-content {
+    margin-left: 300px; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position: fixed;
+    left: 300px;
+    width: calc(100% - 300px);
+    top: 0;
+    z-index: 100;
+    transition: left 300ms;
+}
+
+header h2 {
+    color: #222;
+}
+
+header label i {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.timkiem {
+    border: 1px solid #000000;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.timkiem i {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+
+.timkiem input {
+    height: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.nguoidung {
+    display: flex;
+    align-items: center;
+}
+
+.nguoidung img {
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.nguoidung small {
+    display: inline-block;
+    color: grey;
+}
+
+main {
+    margin-top: 80px;
+    padding: 2rem 1.5rem;
+    background: #edeef0;
+    min-height: calc(100vh - 90px);
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Hiển thị 4 cột đều nhau */
+    gap: 20px; /* Khoảng cách giữa các card */
+    padding: 20px;
+}
+
+.card-single { 
+    display: flex;
+    justify-content: space-between; /* Căn đều hai phần trong card */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px; /* Bo góc card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng card */
+    transition: transform 0.3s ease; /* Hiệu ứng khi hover */
+    cursor: pointer;
+}
+
+.card-single:hover {
+    transform: translateY(-10px); /* Hiệu ứng hover */
+}
+
+.card-single i {
+    font-size: 2rem;
+    color: var(--color-one);
+}
+
+.card-single h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.card-single span {
+    font-size: 16px;
+    color: #888;
+}
+
+/* Recent Flex */
+.recent-flex {
+    margin-top: 3.5rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 67% auto;
+}
+
+/* Card */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Đảm bảo chiều cao bằng nhau */
+}
+
+.card-header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f4f4f4;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card-header h3 {
+    margin-right: 10px;
+}
+
+.card-header button {
+    background: var(--color-one);
+    color: #fff;
+    border:1px solid var(--color-one);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3ms;
+}
+
+.card-header button:hover {
+    background: var(--color-one-hover);
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.card-body {
+    flex: 1; /* Giúp nội dung thẻ chiếm phần còn lại của chiều cao */
+    padding: 1rem;
+}
+
+/* Bảng Đơn Hàng */
+.table-responsive {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+thead td {
+    font-weight: 700;
+    text-align: left; /* Căn trái tiêu đề */
+    padding: .5rem 1rem;
+}
+
+td {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    color: #222;
+    vertical-align: middle; /* Đảm bảo văn bản ở giữa */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Màu nền khác cho các hàng chẵn */
+}
+
+.status {
+    display: inline-block;
+    height: 20px; /* Giảm kích thước của biểu tượng trạng thái */
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 1rem; /* Thêm khoảng cách giữa biểu tượng và văn bản */
+}
+
+/* Khách Hàng */
+.customer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info h4 {
+    font-weight: 600;
+}
+
+.info span {
+    font-size: .9rem;
+    color: grey;
+}
+
+.contact i {
+    font-size: 1.2rem;
+    color: var(--color-one);
+    margin: 0;
+    margin-right: 10px;
+}
+
+.customer:last-child {
+    border-bottom: none; /* Không có đường viền cho phần tử cuối cùng */
+}
+#khep{
+   display: none; 
+}
+#khep:checked + .sidebar{
+   width: 70px;
+
+}
+#khep:checked + .sidebar{
+   width: 70px;
+
+}
+
+#khep:checked + .sidebar .sidebar-nhanh h2 span,
+#khep:checked + .sidebar li a span,
+#khep:checked + .sidebar .sidebar-nhanh h2{
+   display: none;
+
+}
+#khep:checked ~ .main-content{
+    margin-left: 70px;
+}
+#khep:checked ~ .main-content header{
+    width: calc(100% -70px);
+    left: 70px;
+}

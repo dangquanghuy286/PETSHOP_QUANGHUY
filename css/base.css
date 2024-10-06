@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing: border-box;: Đặt kiểu tính toán kích thước hộp cho các phần tử là border-box, tức là tổng chiều rộng và chiều cao của phần tử sẽ bao gồm cả phần border và padding. */
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --color-one: #ffd80a;
+    --color-two: #f7f7f7;
+    --color-text: #232323;
+    --color-background1: #f0f0f0;
+    --color-background2: #e9d7d3;
+    --font-family: "DM Sans", sans-serif;
+
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-family);
+
+}
+
+li {
+    list-style-type: none;
+}

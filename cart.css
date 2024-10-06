@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+    /* Tránh tràn ngang */
+}
+
+/* Đảm bảo body và html chiếm toàn bộ chiều cao màn hình */
+html,
+body {
+    height: 100%;
+}
+
+/* Đảm bảo flex layout giữa header, content và footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 140px;
+    margin-bottom: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+header .logo {
+    width: 155px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .menu ul {
+    display: flex;
+}
+
+header .menu ul li {
+    padding: 0 20px;
+}
+
+header .menu ul li a {
+    color: #272727;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+header .menu ul li a:hover {
+    color: #ffd80a;
+}
+
+header .header_right {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+}
+
+header .header_right i {
+    font-size: 26px;
+    color: #272727;
+    margin-left: 20px;
+}
+
+header .header_right .rel {
+    position: relative;
+}
+
+header .header_right .rel .num {
+    position: absolute;
+    bottom: 0;
+    right: 17px;
+    background-color: black;
+    color: white;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+header .header_right .rel .total {
+    position: absolute;
+    color: #272727;
+    font-weight: 600;
+    top: -8px;
+    padding-left: 5px;
+}
+
+/* Content */
+.container {
+    display: flex;
+    margin: 3rem 150px;
+    flex: 1;
+    /* Đảm bảo phần nội dung mở rộng chiếm chiều cao còn lại */
+}
+
+.cart {
+    width: 65%;
+    background-color: #f2f2f2;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+table {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.table-head {
+    color: white;
+    background-color: #FFD70A;
+}
+
+.head-img {
+    text-align: left;
+    padding-left: 7px;
+}
+
+.summary {
+    background-color: #f2f2f2;
+    width: 35%;
+    margin-left: 20px;
+}
+
+.detail {
+    margin: 10px 0;
+    padding: 0 10px;
+    align-items: center;
+    background-color: #FFD70A;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    margin: 15px 0;
+    padding: 7px;
+}
+
+button {
+    border: none;
+    background-color: #18bdfe;
+    padding: 8px 30px;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.checkout {
+    width: 100%;
+    background-color: #FFD70A;
+}
+
+button:hover,
+.checkout:hover {
+    background-color: #333;
+}
+
+.img-box {
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #FFD70A;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-trash {
+    color: #FFD70A;
+}
+
+.fa-trash:hover {
+    color: #333;
+}
+
+/* Nút xóa */
+.delete-btn {
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.delete-btn:hover {
+    color: #ff5555;
+    /* Đổi màu khi hover */
+}
+
+.table-head th,
+.table-head td {
+    padding: 10px;
+    text-align: center;
+}
+
+.fa-trash {
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fa-trash:hover {
+    color: red;
+    /* Đổi màu khi hover */
+    transform: scale(1.2);
+    /* Tăng kích thước khi hover */
+}
+.thanhtoan{
+    text-align: center;
+    justify-content: center;
+    font-weight: inherit;
+
+}
+.thanhtoan:hover{
+    color: #ff0000;
+    
+}
+/* Footer */
+footer {
+    font-family: var(--font1);
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: auto;
+    /* Đảm bảo footer luôn ở cuối trang */
+}
+
+footer .footer-section2 h2 {
+    font-weight: bold;
+}
+
+footer ul li a {
+    font-family: var(--font1);
+}
+
+.footer-section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-section1 .section1-block1,
+.section1-block2,
+.section1-block3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section1 .section1-block1 img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+.footer-section1 .section1-block2 {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-section1 .section1-block2 input {
+    width: 75%;
+    height: 45px;
+    border: 1px solid #000;
+    border-right: none;
+}
+
+.footer-section1 .section1-block2 span {
+    display: flex;
+    background-color: #ffd80a;
+    height: 45px;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-weight: 800;
+}
+
+.footer-section2 {
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-section2 h2 {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer-section2 p,
+ul li {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-section2 .introduce {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    font-family: var(--font1);
+    margin-right: 30px;
+}
+
+.footer-section2 .introduce img {
+    margin-top: 20px;
+    width: 177px;
+}
+
+.footer-section2 .policy {
+    width: 25%;
+    margin-right: 30px;
+}
+
+.footer-section2 .policy ul li {
+    list-style-image: url("../image/hand-point.svg");
+}
+
+.footer-section2 .contact {
+    width: 40%;
+}
+
+.footer-section2 .contact .cover-contact {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 12px;
+}
+
+.footer-section2 .contact p {
+    margin-left: 10px;
+}
